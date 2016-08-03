@@ -15,18 +15,18 @@ def matrix_addition(a, b):
     return c
 
 
-def result(b):
+def result(row,column):
     c = []
     d = []
-    for i in range(len(b[1])):
+    for i in range(column):
         c.append(0)
 
-    for j in range(len(b)):
+    for j in range(row):
         d.append(c)
     return d
 
 def matrix_multiply(a, b):
-    c = result(b)
+    c = result(len(a), len(b[0]))
     for i in range(len(a)):
         for j in range(len(a[1])):
             for k in range(len(b[1])):
