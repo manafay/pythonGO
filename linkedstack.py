@@ -29,12 +29,10 @@ class LinkedStack():
 
     def print_stack(self):
         current = self.__top
-        i = 0
-        while i <= self.__length:
-            if current:
+        while current:
                 print(current.value)
                 current = current.link
-            i += 1
+
 
 def test_stack():
 
