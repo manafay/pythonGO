@@ -17,7 +17,7 @@ def days_in_month(month, year):
         return days_in_feb(year)
     return days_of_month(month)
 
-#min_max
+# min_max
 def min_max(lst):
     min = lst[0]
     max = lst[0]
@@ -28,7 +28,7 @@ def min_max(lst):
             max = e
     return [min, max]
 
-#Checks if sorted or not
+# Checks if sorted or not
 
 def is_sorted(lst):
     for i in range(0, len(lst) - 1):
@@ -36,7 +36,7 @@ def is_sorted(lst):
             return False
     return True
 
-#Sort method
+# Sort method
 
 def sort(lst):
     for i in range(len(lst) - 1, 0, -1):
@@ -48,7 +48,7 @@ def sort(lst):
     return lst
 
 
-#Unique numbers with no duplicates
+# Unique numbers with no duplicates
 
 def unique(lst):
     x = sort(lst)
